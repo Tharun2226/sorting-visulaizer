@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <label>Array Size: <input type="range" id="arraySize" min="10" max="100" value="50"></label>
+        <label>Speed: <input type="range" id="speed" min="1" max="100" value="50"></label>
+        <button id="resetArray">Reset Array</button>
+        <select id="algorithm">
+            <option value="bubbleSort">Bubble Sort</option>
+            <option value="insertionSort">Insertion Sort</option>
+            <option value="selectionSort">Selection Sort</option>
+            <option value="quickSort">Quick Sort</option>
+            <option value="mergeSort">Merge Sort</option>
+            <option value="heapSort">Heap Sort</option>
+        </select>
+        <button id="sort">Sort</button>
+        <span id="operationCount">Operations: 0</span>
+    </div>
+    <div class="array-container" id="arrayContainer"></div>
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2024 Tharun
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
